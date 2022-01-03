@@ -125,11 +125,12 @@ if __name__ == "__main__":
         cube_face = faces[i]
         cv.imshow("faces", cube_face)
         colours.append(detect_cube_face(cube_face, boundaries))
+        print(colours[i])
         cv.waitKey(0)
 
     print("---------------------------")
     print("Here are your cube faces:")
-    print(boundaries)
+    print(colours)
     print("---------------------------")
 
     cv.destroyAllWindows()
